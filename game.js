@@ -7,8 +7,8 @@ kaboom({
 })
 
 const MOVE_SPEED = 120
-const JUMP_FORCE = 360
-const BIG_JUMP_FORCE = 550
+const JUMP_FORCE = 300
+const BIG_JUMP_FORCE = 400
 let CURRENT_JUMP_FORCE = JUMP_FORCE
 let isJumping = true
 const FALL_DEATH = 400
@@ -219,7 +219,7 @@ scene("game", ({ level, score }) => {
 })
 
 scene('lose', ({ score }) => {
-    add([text(score, 32), origin('center', pos(width()/ 2, height()/ 2))])
+    add([text(score, 32), origin('center', pos(width()/ 1.5, height()/ 1.5))])
 })
 
 start("game", { level: 0, score: 0})
