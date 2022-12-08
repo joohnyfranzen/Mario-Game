@@ -7,7 +7,7 @@ kaboom({
 })
 
 const MOVE_SPEED = 120
-const JUMP_FORCE = 300
+const JUMP_FORCE = 400
 const BIG_JUMP_FORCE = 400
 let CURRENT_JUMP_FORCE = JUMP_FORCE
 let isJumping = true
